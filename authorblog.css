@@ -1,0 +1,744 @@
+/* Import from Googlefonts. Font used = poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e4deee48;
+}
+
+/* For logo */
+a:link{
+    text-decoration: none;
+}
+
+
+
+/* Navbar contents start here */
+
+.logo{
+    background-color: rgba(92, 91, 91, 0.642);
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-top-right-radius: 1.2vw;
+    border: 2px solid white;
+}
+
+.logo:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.09);
+    color: white;
+}
+
+.logo:hover span{
+    display: none;
+}
+
+.logo:hover::before{
+    content: "Councillor Onyeama";
+    font-size: large;
+    font-weight: lighter;
+}
+
+#bookBtn{
+    margin-left: 200px;
+    padding: 0 40px;
+    background-color: rgba(129, 125, 125, 0.619);
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar button a{
+    text-decoration: none;
+    color: white;
+}
+
+#bookBtn:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.258);
+    font-weight: 500;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%)), url(images/wall1.jpg);
+    background-size: cover;
+}
+
+.navlist{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navlist li{
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navlist li a:hover{
+    cursor: pointer;
+    color: cornsilk;
+}
+
+.navlist a.alive{
+    border-bottom: 3px solid cornsilk;;
+    padding: 12px 8px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(176, 175, 175);
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+.menu-lines{
+    width: 25px;
+    height: 2px;
+    background-color: slategrey;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar contents end here */
+
+
+
+/* Blog heading starts here */
+
+.blogheading{
+    text-align: center;
+    margin: 50px 0;
+    color: #2B3B47;
+    font-size: 1.7rem;
+}
+
+.blogheading span{
+    color: olive;
+}
+
+.blogheading #welcome{
+    font-family: kaufmann BT;
+    font-size: 4rem;
+    color: olive;
+}
+
+/* Blog heading ends here */
+
+
+
+/* Blog container starts here */
+
+.blog-container{
+    width: 95%;
+    height: 6300px;
+    margin:30px;
+    color: #2B3B47;
+    background-color: rgba(211, 211, 211, 0.155);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.BLOGOne{
+    margin: 10px;
+}
+
+.block-1{
+    display: flex;
+}
+
+.block-1A{
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    width: 1300px;
+    height: 2350px;
+    line-height: 1.6;
+    box-shadow: 0px 0px 15px 2px black;
+}
+
+.block-1B{
+    text-align: center;
+    border: 1px solid lightgray;
+    margin: 30px;
+    padding: 30px;
+    width: 1200px;
+    box-shadow: 5px 0px 0px 5px #2b3b47ae;
+}
+
+.blog-images{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.blogbreak-icon{
+    width: 50px;
+    margin: 40px 0;
+    opacity: 0.5;
+}
+
+.BLOGTwo{
+    display: flex;
+    height: 750px;
+    padding: 20px;
+    gap: 50px;
+    text-align: center;
+    margin: 150px 20px;
+    border: 1px solid lightgray;
+}
+
+.B2two{
+    text-align: justify;
+}
+
+.B2three{
+    display: flex;
+    gap: 20px;
+    text-align: justify;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+.BLOGthree{
+    display: flex;
+    height: 440px;
+    background-color: #2b3b4773;
+    padding: 20px;
+    gap: 50px;
+    text-align: center;
+    margin: 200px 20px;
+}
+
+.B3one{
+    display: flex;
+    text-align: justify;
+    gap: 20px;
+}
+
+.BLOGfour{
+    display: flex;
+    height: 780px;
+    background-color: #2b3b4773;
+    padding: 20px;
+    gap: 50px;
+    text-align: center;
+    margin: 200px 20px;
+}
+
+.B4one{
+    width: 2500px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.B4two{
+    display: flex;
+    gap: 20px;
+}
+
+.BLOGfive{
+    display: flex;
+    height: 500px;
+    background-color: #2b3b4773;
+    padding: 20px;
+    gap: 50px;
+    text-align: center;
+    margin: 200px 20px;
+    text-align: justify;
+}
+
+.B5one{
+    display: flex;
+    gap: 15px;
+    width: 700px;
+}
+
+.B5two{
+    display: flex;
+    gap: 15px;
+}
+
+/* Blog container ends here */
+
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: olive;
+    height: 350px;
+    width: 100%;
+    padding: 30px;
+    font-size: 0.9rem;
+}
+
+.footer h2{
+    text-align: center;
+    color: rgba(1, 1, 1, 0.574);
+}
+
+.footer-logo{
+    background-color: rgba(92, 91, 91, 0.642);
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-top-right-radius: 1vw;
+    height: 38px;
+    border: 2px solid rgba(0, 0, 0, 0.444);
+}
+
+.footer-logo:hover{
+    cursor: pointer;
+}
+
+.logo-list li{
+    list-style: none;
+    line-height: 1.8;
+}
+
+.logo-list li a{
+    color: black;
+}
+
+.logo-list li a:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.642);
+}
+
+.location{
+    display: flex;
+    gap: 5px;
+}
+
+.logo-list{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    background-color: rgba(245, 245, 245, 0.334);
+    box-shadow: 15px 8px rgba(0, 0, 0, 0.395);
+    margin: 15px 0;
+}
+
+.social-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.location-icon{
+    height: 25px;
+    width: 22px;
+}
+
+.socials #github:hover, #facebook:hover, #instagram:hover, #twitter:hover, #linkedin:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.148);
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.copyrights{
+    display: flex;
+    gap: 3px;
+    margin-left: 380px;
+    margin-top: 30px;
+}
+
+#copyright-icon{
+    height: 20px;
+    width: 25px;
+}
+
+/* FOOTER ENDS */
+
+
+
+
+/* Note that media queries are only for the following phone sizes: Android Large and Small (360 width), iPhone 13 mini & 8 (375 width) and iPhone 13 promax (428 width). No Media queries for tablets and laptop or desktop sizes bigger than 1440 width. */
+
+
+
+/* AUTHORBLOG PAGE MEDIA QUERY BEGINS HERE */
+
+
+/* Hamburger Menu for 1100 Max-width Begins Here */
+
+@media(max-width:1100px){
+
+    .portfolio-container .blocks-1{
+        display: inline-block;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navlist{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2b3b47f9;
+        color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navlist.active{
+        left: 0;
+    }
+
+    .navbar{
+        justify-content: space-around;
+    }
+
+}
+
+/* Hamburger Menu for 1100 Max-width Ends Here */
+
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX [428 width] (435 Max-width) Begins Here */
+
+@media (max-width: 435px){
+    .navbar{
+        padding: 20px 0;
+    }
+
+    .logo{
+        font-size: 1rem;
+        border-top-right-radius: 2vmax;
+        height: 35px;
+    }
+
+    .logo:hover{
+        background-color: none;
+        color: none;
+    }
+   
+    .logo:hover::before{
+        content: 'CillorO';
+    }
+
+    #bookBtn{
+        margin: 0;
+        width: 190px;
+        height: 40px;
+    }
+
+    .blogheading{
+        font-size: 1.5rem;
+    }
+
+    .blogheading #welcome{
+        font-size: 2.5rem;
+    }
+
+    .blog-container{
+        width: 90%;
+        height: 10800px;
+        margin-left: 22px;
+        font-size: small;
+    }
+
+    .block-1{
+        display: block;
+    }
+
+    .blog-images{
+        width: 160px;
+        height: 200px;
+    }
+
+    .block-1A{
+        width: 340px;
+        height: 2300px;
+        margin: 40px 15px;
+    }
+
+    .block-1B{
+        width: 340px;
+        margin: 15px;
+    }
+
+    .BLOGTwo{
+        display: block;
+        height: 1700px;
+    }
+
+    #onyi-img{
+        margin-top: 40px;
+    }
+
+    .B2three{
+        margin-top: 80px;
+        gap: 10px;
+    }
+
+    #flam-img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .BLOGthree{
+        height: 920px;
+    }
+
+    .B3one{
+        text-align: left;
+    }
+
+    #author-img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .BLOGfour{
+        height: 1300px;
+        display: block;
+    }
+
+    .B4one{
+        width: 320px;
+        margin: -5px;
+    }
+
+    #somi-img{
+        width: 100px;
+        height: 100px;
+        margin: 0 5px;
+    }
+
+    .B4two{
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .BLOGfive{
+        display: block;
+        height: 950px;
+        width: 350px;
+    }
+
+    .B5one{
+        width: 300px;
+        text-align: right;
+    }
+
+    .B5two{
+        margin-top: 60px;
+        text-align: left;
+        padding: 5px;
+    }
+
+    #badboy-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer{
+        height: 620px;
+        font-size: small;
+        margin-top: 80px;
+    }
+
+    .footer, .logo-list{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logo-list ul{
+        line-height: 25px;
+        padding: 15px 0;
+    }
+
+    .location, .contact{
+        padding-bottom: 15px;
+    }
+
+    .copyrights{
+        margin: 5px 0;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+    .footer-logo{
+        width: 60px;
+        display: inline-block;
+        border-top-right-radius: 3vmax;
+    }
+}
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX  [428 width] (435 Max-width) Ends Here */
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width] (380 Max-width) Begins Here */
+
+@media (max-width: 380px){
+    
+    .blogheading{
+        font-size: 1.2rem;
+    }
+    
+    .blog-container{
+        width: 90%;
+        height: 12300px;
+        margin-left: 15px;
+    }
+
+    .block-1A{
+        width: 320px;
+        height: 2400px;
+        margin: 40px 5px;
+    }
+
+    .block-1B{
+        width: 320px;
+        margin: -4px;
+    }
+
+    .BLOGTwo{
+        display: block;
+        height: 2100px;
+    }
+
+    .B2three{
+        margin-top: 80px;
+        gap: 10px;
+        text-align: right;
+    }
+
+    .BLOGthree{
+        height: 1200px;
+    }
+
+    .BLOGfour{
+        height: 1700px;
+    }
+
+    .B4one{
+        width: 270px;
+        margin: -5px;
+    }
+
+    .BLOGfive{
+        height: 1050px;
+        width: 300px;
+    }
+
+    .B5one{
+        width: 270px;
+    }
+
+    .B5two{
+        margin-top: 60px;
+    }
+}
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width] (380 Max-width) Ends Here */
+
+
+
+
+/* MEDIA QUERY FOR ANDROID LARGE AND SMALL [360 width] (365 Max-width) Begins Here */
+
+@media (max-width: 365px){
+    
+    .blogheading{
+        font-size: large;
+    }
+
+    .blog-container{
+        width: 90%;
+        height: 13200px;
+        margin-left: 15px;
+    }
+
+    .block-1A{
+        width: 300px;
+        height: 2500px;
+    }
+
+    .block-1B{
+        width: 300px;
+    }
+
+    .BLOGTwo{
+        height: 2350px;
+    }
+
+    .BLOGthree{
+        height: 1300px;
+    }
+
+    .BLOGfour{
+        height: 1900px;
+    }
+
+    .B4one{
+        width: 260px;
+    }
+
+    .BLOGfive{
+        height: 1050px;
+        width: 290px;
+    }
+
+    .B5one{
+        width: 260px;
+    }
+
+    .B5two{
+        margin-top: 60px;
+        width: 280px;
+        margin-left: -15px;
+        padding: 15px;
+    }
+}
+
+/* MEDIA QUERY FOR ANDROID LARGE AND SMALL [360 width] (365 Max-width) Ends Here */

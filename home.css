@@ -1,0 +1,760 @@
+/* Import from Googlefonts. Font used = poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e4deee48;
+}
+
+/* For logo */
+a:link{
+    text-decoration: none;
+}
+
+
+/* Navbar contents start here */
+
+.logo{
+    background-color: rgba(92, 91, 91, 0.642);
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-top-right-radius: 1.2vw;
+    border: 2px solid white;
+}
+
+.logo:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.09);
+    color: white;
+}
+
+.logo:hover span{
+    display: none;
+}
+
+.logo:hover::before{
+    content: "Councillor Onyeama";
+    font-size: large;
+    font-weight: lighter;
+}
+
+#bookBtn{
+    margin-left: 200px;
+    padding: 0 40px;
+    background-color: rgba(129, 125, 125, 0.619);
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar button a{
+    text-decoration: none;
+    color: white;
+}
+
+#bookBtn:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.258);
+    font-weight: 500;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%)), url(images/wall1.jpg);
+    background-size: cover;
+}
+
+.navlist{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navlist li{
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navlist li a:hover{
+    cursor: pointer;
+    color: cornsilk;
+}
+
+.navlist a.alive{
+    border-bottom: 3px solid cornsilk;;
+    padding: 12px 8px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(176, 175, 175);
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+.menu-lines{
+    width: 25px;
+    height: 2px;
+    background-color: slategrey;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar contents end here */
+
+
+
+/* Container for bio starts here */
+
+.bio-cover{
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%)), url(images/desertrobo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.bio-main{
+    display: flex;
+    align-items: center;
+    margin: 20px 70px;
+    width: 80%;
+    height: 450px;
+    color: white;
+    padding: 15px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 20px;
+    font-size: small;
+    line-height: 1.6;
+}
+
+.bio-main .devText{
+    padding: 20px;
+}
+
+#dev-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 90%;
+    margin: 20px;
+}
+
+/* Container for bio ends here */
+
+
+
+/* Services heading container starts here */
+
+.servicesHeading{
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 30px;
+    text-align: justify;
+    background-color: #2B3B47;
+    line-height: 1.6;
+    color: white;
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+#services-span{
+    color: orange;
+}
+
+#services-span:hover{
+    cursor: pointer;
+    font-weight: 300;
+    color: rgb(128, 128, 128);
+}
+
+#CvBtn{
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid red;
+    width: 150px;
+    font-size: medium;
+    margin-left: 70px;
+}
+
+#CvBtn:hover{
+    cursor: pointer;
+    background-color: rgb(212, 108, 17);
+    border: none;
+    color: white;
+}
+
+/* Services heading container ends here */
+
+
+
+/* SERVICES */
+
+.header{
+    text-align: center;
+    text-decoration: overline orange;
+    margin-top: 100px;
+    color: #2B3B47;
+    font-size: 2rem;
+    box-shadow: 70px 70px 70px 70px #2B3B47;
+}
+
+.services{
+    width: 90%;
+    height: 700px;
+    margin-left: 60px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: flex;
+    padding: 40px 50px;
+    gap: 15px;
+    background-color: rgba(211, 211, 211, 0.155);
+    color: #2B3B47;
+    font-size: 0.9rem;
+}
+
+
+/* (1) Web Development Container (inside SERVICES I RENDER) Starts Here */
+
+.webDev{
+    margin: 20px;
+    border-radius: 8px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px;
+    transition: 0.5s;
+}
+
+.webDev:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+#devImg{
+    width: 60px;
+    height: 60px;
+}
+
+.languages{
+    padding: 10px;
+    background-color: #2B3B47;
+    margin-top: 20px;
+    color: white;
+    border-top-right-radius: 3vmax;
+}
+
+
+/* (2) Design Container (inside SERVICES I RENDER) Starts Here */
+
+.design{
+    margin: 20px;
+    border-radius: 8px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 520px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px;
+    transition: 0.5s;
+}
+
+.design:hover{
+    transform: translateX(-10px);
+    cursor: pointer;
+}
+
+#designImg{
+    width: 100px;
+    height: 150px;
+    border: 2px solid rgb(119, 117, 117);
+    border-radius: 13px;
+}
+
+.design-tools{
+    padding: 10px;
+    background-color: #2B3B47;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* (3) Writing Container (inside SERVICES I RENDER) Starts Here */
+
+.writing{
+    margin: 20px;
+    border-radius: 8px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px;
+    transition: 0.5s;
+}
+
+.writing:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+#writingImg{
+    width: 60px;
+    height: 60px;
+}
+
+.writing-interests{
+    padding: 10px;
+    background-color: #2B3B47;
+    margin-top: 20px;
+    color: white;
+    border-top-right-radius: 3vmax;
+}
+
+/* SERVICES Ends Here*/
+
+
+
+/* Meet Me As An Author Starts Here*/
+
+.author-container{
+    width: 90%;
+    height: 800px;
+    border: 5px solid rgb(226, 250, 226);
+    margin-left: 60px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    border-radius: 20px;
+    color: #2B3B47;
+    font-size: 0.9rem;
+}
+
+.author-main{
+    display: flex;
+    margin: 20px;
+    gap: 30px;
+    height: 650px;
+    padding: 50px;
+}
+
+.author-text{
+    padding: 30px;
+    margin-top: 40px;
+    align-items: center;
+    text-align: justify;
+    height: 520px;
+    gap: 20px;
+    border: 2px solid rgb(226, 250, 226);
+    color: #2B3B47;
+    line-height: 1.8;
+}
+
+.author-text h1{
+    font-size: 3rem;
+}
+
+.book-content p{
+    background-color: rgba(144, 238, 144, 0.345);
+    padding: 15px;
+}
+
+.book-content button{
+    padding: 10px;
+    width: 200px;
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.book-content button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    transform: translateY(5px);
+}
+
+#bookImg{
+    width:200px;
+    height: 250px;
+}
+
+/* Meet Me As An Author Ends Here*/
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: olive;
+    height: 350px;
+    width: 100%;
+    padding: 30px;
+    font-size: 0.9rem;
+}
+
+.footer h2{
+    text-align: center;
+    color: rgba(1, 1, 1, 0.574);
+}
+
+.footer-logo{
+    background-color: rgba(92, 91, 91, 0.642);
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-top-right-radius: 1vw;
+    height: 38px;
+    border: 2px solid rgba(0, 0, 0, 0.444);
+}
+
+.footer-logo:hover{
+    cursor: pointer;
+}
+
+.logo-list li{
+    list-style: none;
+    line-height: 1.8;
+}
+
+.logo-list li a{
+    color: black;
+}
+
+.logo-list li a:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.642);
+}
+
+.location{
+    display: flex;
+    gap: 5px;
+}
+
+.logo-list{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    background-color: rgba(245, 245, 245, 0.334);
+    box-shadow: 15px 8px rgba(0, 0, 0, 0.395);
+    margin: 15px 0;
+}
+
+.social-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.location-icon{
+    height: 25px;
+    width: 22px;
+}
+
+.socials #github:hover, #facebook:hover, #instagram:hover, #twitter:hover, #linkedin:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.148);
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.copyrights{
+    display: flex;
+    gap: 3px;
+    margin-left: 380px;
+    margin-top: 30px;
+}
+
+#copyright-icon{
+    height: 20px;
+    width: 25px;
+}
+
+/* HOME PAGE CSS ENDS HERE */
+
+
+
+
+/* Note that media queries are only for the following phone sizes: Android Large and Small (360 width), iPhone 13 mini & 8 (375 width) and iPhone 13 promax (428 width). No Media queries for tablets and laptop or desktop sizes bigger than 1440 width. */
+
+
+
+/* HOME PAGE MEDIA QUERY BEGINS HERE */
+
+
+/* Hamburger Menu for 1100 Max-width Begins Here */
+
+@media(max-width:1100px){
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navlist{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2b3b47f9;
+        color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navlist.active{
+        left: 0;
+    }
+
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+/* Hamburger Menu for 1100 Max-width Ends Here */
+
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX [428 width] (435 Max-width) Begins Here */
+
+@media (max-width: 435px){
+    .navbar{
+        padding: 20px 0;
+    }
+
+    .logo{
+        font-size: 1rem;
+        border-top-right-radius: 2vmax;
+        height: 38px;
+    }
+
+    .logo:hover{
+        background-color: none;
+        color: none;
+    }
+   
+    .logo:hover::before{
+        content: 'CillorO';
+    }
+
+    #bookBtn{
+        margin: 0;
+        width: 190px;
+        height: 40px;
+    }
+
+    .bio-cover{
+        height: 1100px;
+        background-position: center;
+    }
+
+    .bio-main{
+        display: block;
+        width: 350px;
+        height: 900px;
+        margin: 0 -15px;
+        padding: 20px 0;
+        font-size: small;
+        text-align: center;
+    }
+
+    #dev-image{
+        width: 170px;
+        height: 170px;
+    }
+
+    .servicesHeading{
+        width: 320px;
+        margin: 0 55px;
+        font-size: small;
+        text-align: center;
+    }
+
+    #CvBtn{
+        margin-left: 55px;
+    }
+
+    .header{
+        font-size: 1.2rem;
+    }
+
+    .services{
+        display: block;
+        width: 350px;
+        font-size: small;
+        height: 1800px;
+        margin: 50px 40px;
+    }
+
+    .webDev, .design, .writing{
+        width: 250px;
+        margin: 40px -5px;
+    }
+
+    .design-tools{
+        margin-top: 40px;
+    }
+
+    .author-container{
+        width: 350px;
+        height: 1400px;
+        margin: 60px 30px;
+        display: block;
+    }
+
+    .author-main{
+        height: 1100px;
+        display: block;
+        padding: 0;
+    }
+
+    .book-content{
+        text-align: center;
+        padding: 30px;
+        font-size: small;
+    }
+
+    #bookImg{
+        width: 150px;
+        height: 200px;
+    }
+
+    .book-content button{
+        width: 150px;
+        font-size: small;
+    }
+
+    .author-text h1{
+        font-size: medium;
+    }
+
+    .author-text{
+        height: 800px;
+        font-size: small;
+        text-align: center;
+        padding: 15px;
+        margin: 50px 0;
+        
+    }
+
+    .footer{
+        height: 640px;
+        font-size: small;
+    }
+
+    .footer, .logo-list{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logo-list ul{
+        line-height: 25px;
+        padding: 15px 0;
+    }
+
+    .location, .contact{
+        padding-bottom: 15px;
+    }
+
+    .copyrights{
+        margin: 5px 0;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+    .footer-logo{
+        width: 60px;
+        display: inline-block;
+        border-top-right-radius: 3vmax;
+    }
+}
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX  [428 width] (435 Max-width) Ends Here */
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width], Android Large & Small [360 width] (380 Max-width) Begins Here */
+
+@media (max-width: 380px){
+    .bio-cover{
+        height: 1300px;
+    }
+
+    .bio-main{
+        width: 300px;
+        height: 1100px;
+    }
+
+    .servicesHeading{
+        margin-left: 25px;
+        width: 310px;
+    }
+
+    #CvBtn{
+        margin-left: 25px;
+        font-size: small;
+        width: 120px;
+    }
+
+   .services{
+    margin-left: 20px;
+    width: 320px;
+   }
+
+   .webDev, .design, .writing{
+    margin-left: -20px;
+   }
+
+   .author-container{
+    width: 300px;
+    height: 1600px;
+   }
+
+   .author-text{
+    height: 900px;
+   }
+}
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width], Android Large & Small [360 width] (380 Max-width) Ends Here */
+
+
+

@@ -1,0 +1,343 @@
+/* Import from Googlefonts. Font used = poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #2B3B47;
+}
+
+/* For logo */
+a:link{
+    text-decoration: none;
+}
+
+
+
+/* Navbar contents start here */
+
+.logo{
+    background-color: rgba(92, 91, 91, 0.642);
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-top-right-radius: 1.2vw;
+    border: 2px solid white;
+}
+
+.logo:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.09);
+    color: white;
+}
+
+.logo:hover span{
+    display: none;
+}
+
+.logo:hover::before{
+    content: "Councillor Onyeama";
+    font-size: large;
+    font-weight: lighter;
+}
+
+#bookBtn{
+    margin-left: 200px;
+    padding: 0 40px;
+    background-color: rgba(129, 125, 125, 0.619);
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar button a{
+    text-decoration: none;
+    color: white;
+}
+
+#bookBtn:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.258);
+    font-weight: 500;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%)), url(images/wall1.jpg);
+    background-size: cover;
+}
+
+.navlist{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navlist li{
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navlist li a:hover{
+    cursor: pointer;
+    color: cornsilk;
+}
+
+.navlist a.alive{
+    border-bottom: 3px solid cornsilk;;
+    padding: 12px 8px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(176, 175, 175);
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+.menu-lines{
+    width: 25px;
+    height: 2px;
+    background-color: slategrey;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar contents end here */
+
+
+
+/* Blog container starts here */
+
+.blogcontainer{
+    border: 1px solid light;
+    height: 700px;
+    margin: 60px;
+    padding: 40px 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+#blogimage{
+    width: 300px;
+    height: 340px;
+    border-radius: 20px;
+    opacity: 0.9;
+    border-top-right-radius: 8vmax;
+}
+
+#blogtitle{
+    font-family: kaufmann BT;
+    font-size: 5rem;
+    padding: 10px;
+    border-radius: 50%;
+    color: olive;
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px 2px olive;
+}
+
+.blogitems button{
+    padding: 15px 30px;
+    margin: 30px;
+    background-color: rgba(255, 166, 0, 0.536);
+    border: none;
+    border-radius: 5px;
+}
+
+.blogitems button a{
+    color: black;
+}
+
+.blogitems button:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+/* Blog container ends here */
+
+
+
+
+/* Note that media queries are only for the following phone sizes: Android Large and Small (360 width), iPhone 13 mini & 8 (375 width) and iPhone 13 promax (428 width). No Media queries for tablets and laptop or desktop sizes bigger than 1440 width. */
+
+
+
+/* BLOG PAGE MEDIA QUERY BEGINS HERE */
+
+
+/* Hamburger Menu for 1100 Max-width Begins Here */
+
+@media(max-width:1100px){
+
+    .portfolio-container .blocks-1{
+        display: inline-block;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navlist{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2b3b47f9;
+        color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navlist.active{
+        left: 0;
+    }
+
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+/* Hamburger Menu for 1100 Max-width Ends Here */
+
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX [428 width] (435 Max-width) Begins Here */
+
+@media (max-width: 435px){
+    .navbar{
+        padding: 20px 0;
+    }
+
+    .logo{
+        font-size: 1rem;
+        border-top-right-radius: 2vmax;
+        height: 35px;
+    }
+
+    .logo:hover{
+        background-color: none;
+        color: none;
+    }
+   
+    .logo:hover::before{
+        content: 'CillorO';
+    }
+
+    #bookBtn{
+        margin: 0;
+        width: 190px;
+        height: 40px;
+    }
+
+    .blogcontainer{
+        border-radius: 0;
+        width: 380px;
+        margin-left: 28px;
+        height: 550px;
+    }
+
+    #blogimage{
+        width: 200px;
+        height: 220px;
+        margin-left: -10px;
+    }
+
+    #blogtitle{
+        font-size: 2.5rem;
+    }
+
+    .blogitems button{
+        margin: 10px;
+        padding: 12px;
+        width: 150px;
+        font-size: small;
+        
+    }
+}
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX  [428 width] (435 Max-width) Ends Here */
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width] (380 Max-width) Begins Here */
+
+@media (max-width: 380px){
+    .blogcontainer{
+        width: 340px;
+        margin-left: 20px;
+    }
+
+    #blogimage{
+        margin-left: -30px;
+    }
+
+    #blogtitle{
+        font-size: 2rem;
+    }
+
+    .blogitems button{
+        margin: 8px -10px;
+    }
+}
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width] (380 Max-width) Ends Here */
+
+
+
+
+/* MEDIA QUERY FOR ANDROID LARGE AND SMALL [360 width] (365 Max-width) Begins Here */
+
+@media (max-width: 365px){
+
+    .blogcontainer{
+        width: 320px;
+        margin-left: 22px;
+    }
+
+    #blogimage{
+        margin-left: -40px;
+    }
+
+    .blogitems button{
+        margin: 8px -10px;
+    }
+}
+
+/* MEDIA QUERY FOR ANDROID LARGE AND SMALL [360 width] (365 Max-width) Ends Here */

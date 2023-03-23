@@ -1,0 +1,368 @@
+/* Import from Googlefonts. Font used = poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e4deee48;
+}
+
+/* For logo */
+a:link{
+    text-decoration: none;
+}
+
+
+/* Navbar contents start here */
+
+.logo{
+    background-color: rgba(92, 91, 91, 0.642);
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-top-right-radius: 1.2vw;
+    border: 2px solid white;
+}
+
+.logo:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.09);
+    color: white;
+}
+
+.logo:hover span{
+    display: none;
+}
+
+.logo:hover::before{
+    content: "Councillor Onyeama";
+    font-size: large;
+    font-weight: lighter;
+}
+
+#bookBtn{
+    margin-left: 200px;
+    padding: 0 40px;
+    background-color: rgba(129, 125, 125, 0.619);
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar button a{
+    text-decoration: none;
+    color: white;
+}
+
+#bookBtn:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.258);
+    font-weight: 500;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%)), url(images/wall1.jpg);
+    background-size: cover;
+}
+
+.navlist{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navlist li{
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navlist li a:hover{
+    cursor: pointer;
+    color: cornsilk;
+}
+
+.navlist a.alive{
+    border-bottom: 3px solid cornsilk;;
+    padding: 12px 8px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(176, 175, 175);
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+.menu-lines{
+    width: 25px;
+    height: 2px;
+    background-color: slategrey;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar contents end here */
+
+
+
+
+/* Contents for contact container start here */
+
+.contact-container{
+    display: flex;
+    margin: 30px;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.photo-socials{
+    width: 70%;
+    height: 620px;
+    text-align: center;
+    background-color: rgba(128, 128, 0, 0.593);
+}
+
+.photo-socials h3{
+    margin-top: 15px;
+    color: #2B3B47;
+    font-family: ink free;
+}
+
+#cover-img{
+    width: 100%;
+    height: 450px;
+}
+
+#socials{
+    width: 40px;
+    margin: 20px 10px;
+}
+
+#socials:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 0, 0.349);
+    border-radius: 50%;
+}
+
+.form-container{
+    width: 40%;
+    border: 1.5px solid #1BB1B2;
+    height: 1100px;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.676);
+}
+
+form p{
+    margin-bottom: 50px;
+    color: #0d6e6e;
+    line-height: 1.6;
+    box-shadow: 0px 0px 5px 2px #0d6e6e;
+    padding: 15px;
+}
+
+form input{
+    border: 1px solid lightgray;
+    margin: 20px 0;
+    width: 300px;
+    padding: 10px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form #message{
+    padding: 100px;
+    width: 400px;
+}
+
+#submit{
+    padding: 15px;
+    width: 150px;
+    border: none;
+    background-color: #1BB1B2;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #1bb2b2e0;
+}
+
+/* Contents for contact container end here */
+
+
+
+
+/* Note that media queries are only for the following phone sizes: Android Large and Small (360 width), iPhone 13 mini & 8 (375 width) and iPhone 13 promax (428 width). No Media queries for tablets and laptop or desktop sizes bigger than 1440 width. */
+
+
+
+/* CONTACT PAGE MEDIA QUERY BEGINS HERE */
+
+
+/* Hamburger Menu for 1100 Max-width Begins Here */
+
+@media(max-width:1100px){
+
+    .portfolio-container .blocks-1{
+        display: inline-block;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu-icon.active .menu-lines:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-icon.active .menu-lines:nth-child(2){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navlist{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2b3b47f9;
+        color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navlist.active{
+        left: 0;
+    }
+
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+/* Hamburger Menu for 1100 Max-width Ends Here */
+
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX [428 width] (435 Max-width) Begins Here */
+
+@media (max-width: 435px){
+    .navbar{
+        padding: 20px 0;
+    }
+
+    .logo{
+        font-size: 1rem;
+        border-top-right-radius: 2vmax;
+        height: 35px;
+    }
+
+    .logo:hover{
+        background-color: none;
+        color: none;
+    }
+   
+    .logo:hover::before{
+        content: 'CillorO';
+    }
+
+    #bookBtn{
+        margin: 0;
+        width: 190px;
+        height: 40px;
+    }
+
+    .contact-container{
+        display: block;
+        width: 88%;
+        margin: 30px 25px;
+        font-size: small;
+        height: 1600px;
+    }
+
+    .photo-socials{
+        width: inherit;
+        height: 310px;
+        margin: 24px;
+    }
+
+    #cover-img{
+        height: 200px;
+    }
+
+    .photo-socials h3{
+        font-size: small;
+    }
+
+    #socials{
+        width: 30px;
+    }
+
+    .form-container{
+        margin: 70px 20px;
+        width: 90%;
+        height: 1100px;
+    }
+
+    form #message{
+        width: 300px;
+    }
+
+    #submit{
+        font-size: small;
+        padding: 13px;
+        width: 140px;
+    }
+}
+
+/* MEDIA QUERY FOR iPHONE 13PRO-MAX  [428 width] (435 Max-width) Ends Here */
+
+
+
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width], ANDROID LARGE & SMALL [360 width] (380 Max-width) Begins Here */
+
+@media (max-width: 380px){
+    form input{
+        width: 250px;
+    }
+
+    form #message{
+        width: 250px;
+    }
+}
+
+/* MEDIA QUERY FOR iPHONE 13MINI & 8 [375 width], ANDROID LARGE & SMALL [360 width] (380 Max-width) Begins Here */
+
